@@ -1,0 +1,14 @@
+<fieldset>
+    <input type="text" name="exchange" [(ngModel)]="init.value" (keyup)="onChange()"
+           required autocomplete="off" [ngClass]="{'error': error}" />
+    <small [hidden]="!error">Please enter a number</small>
+
+    <select name="currency" [(ngModel)]="init.currency" (change)="onChange()">
+        <option *ngFor="let currency of currencies | createArray"
+                [hidden]="currency.key === init.disabled"
+                [selected]="currency.key === init.currency"
+                [value]="currency.key">
+            {{ currency.key }}
+        </option>
+    </select>
+</fieldset>

@@ -1,0 +1,25 @@
+<main>
+
+    <!-- Messages placeholder -->
+    <app-alert></app-alert>
+
+    <!-- Exchange converter -->
+    <form *ngIf="exchangeRates.rates" name="exchangeForm" novalidate>
+        <app-currency-box [currencies]="exchangeRates.rates" [init]="leftBox" (state)="updateState($event)"
+                           *ngIf="leftBox.currency"></app-currency-box>
+
+
+        <button type="button" (click)="switchState()">
+            <i class="currency currency-swap" aria-hidden="true"></i>
+        </button>
+
+        <app-currency-box [currencies]="exchangeRates.rates" [init]="rightBox" (state)="updateState($event)"
+                          *ngIf="rightBox.currency"></app-currency-box>
+
+        <fieldset>
+            <button type="button" (click)="resetState()">
+                Reset
+            </button>
+        </fieldset>
+    </form>
+</main>

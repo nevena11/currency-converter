@@ -1,0 +1,10 @@
+<section class="alert-box" *ngIf="alerts.length">
+    <ul>
+        <li *ngFor="let item of alerts">
+            {{ item.message }}
+        </li>
+    </ul>
+    <button type="button" (click)="close()">
+        x
+    </button>
+</section>

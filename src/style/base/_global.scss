@@ -1,0 +1,41 @@
+/**
+ * Global style deckarations
+ * Author: Nevena Jovanovic, nevenaj89@gmail.com
+ * Date: 1.9.2017
+ * Copyright: UNLICENSED (c) 2017 Nevena Jovanovic
+ * Version: 1.0.0
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+// Main layout
+body {
+    background-color: $background;
+    font-family: $fontFamily;
+    font-size: $baseFont;
+    line-height: $baseLine;
+    color: $base;
+
+    // Content wrapper
+    > div:nth-of-type(2) {
+        width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: $background;
+        @include vertical-align;
+
+        // Mobile
+        @media (max-width: $mobile) {
+            width: auto;
+            padding: 15px;
+        }
+    }
+
+    // Header
+    header {
+        margin-bottom: 50px;
+    }
+}

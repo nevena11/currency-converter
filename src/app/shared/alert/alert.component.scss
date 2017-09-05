@@ -1,0 +1,38 @@
+/**
+ * Alert component style
+ * Author: Nevena Jovanovic, nevenaj89@gmail.com
+ * Date: 1.9.2017
+ * Copyright: UNLICENSED (c) 2017 Nevena Jovanovic
+ * Version: 1.0.0
+ */
+
+// Import dependencies
+@import "../../../style/helpers/include";
+
+// Wrapper
+.alert-box {
+    border: 1px solid #52afc6;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    // Messages
+    ul {
+        text-align: left;
+        color: $white;
+        padding-right: 25px;
+    }
+
+    // Button
+    button {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        background: transparent;
+        border: 1px solid$white;
+        color: $white;
+        border-radius: 50%;
+        cursor: pointer;
+        padding-bottom: 3px;
+    }
+}

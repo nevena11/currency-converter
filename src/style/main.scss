@@ -1,0 +1,21 @@
+/**
+ * Main style include
+ * Author: Nevena Jovanovic, nevenaj89@gmail.com
+ * Date: 1.9.2017
+ * Copyright: UNLICENSED (c) 2017 Nevena Jovanovic
+ * Version: 1.0.0
+ */
+
+// Import dependencies
+@import "helpers/include";
+
+// Import CSS reset
+@import "~reset-css/reset";
+
+// Globals
+@import "base/global";
+@import "base/typography";
+
+// Layout
+@import "layout/loader";
+@import "layout/print";

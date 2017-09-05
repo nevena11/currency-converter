@@ -1,0 +1,19 @@
+//- Main template markup
+    Author: Nevena Jovanovic, nevenaj89@gmail.com
+    Date: 1.9.2017
+    Copyright: UNLICENSED (c) 2017 Nevena Jovanovic
+    Version: 1.0.0
+
+//- Page structure
+doctype html
+html(lang="en")
+    block head
+        include blocks/head
+    body
+        block loader
+            include blocks/loader
+        div
+            block header
+                include blocks/header
+            block content
+                include blocks/content

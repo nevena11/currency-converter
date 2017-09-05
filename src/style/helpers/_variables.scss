@@ -1,0 +1,28 @@
+/**
+ * Custom variables
+ * Author: Nevena Jovanovic, nevenaj89@gmail.com
+ * Date: 1.9.2017
+ * Copyright: UNLICENSED (c) 2017 Nevena Jovanovic
+ * Version: 1.0.0
+ */
+
+// Colors
+$base: #4d4d4d !default;
+$background: #77bad0 !default;
+$white: #fff !default;
+$black: #000 !default;
+$error: #f00 !default;
+
+// Fonts
+$fontFamily: Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+
+// Sizes
+$baseFont: 12px !default;
+$baseLine: 16px !default;
+$radius: 5px !default;
+
+// Default images path
+$imagesPath: 'images/' !default;
+
+// Break points
+$mobile: 640px !default;
