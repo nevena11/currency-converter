@@ -17,7 +17,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/nevena11/currency-converter"
   },
   "dependencies": {
     "@angular/common": "~4.3.4",
